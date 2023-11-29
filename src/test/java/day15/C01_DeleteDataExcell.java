@@ -5,9 +5,25 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.junit.Test;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class C01_ReadExcell {
+public class C01_DeleteDataExcell {
+    @Test
+    public void deleteDataFromExcell() throws IOException {
+
+            String filePath = "src/resources/ÜlkelerTest.xlsx";
+            FileInputStream fis = new FileInputStream(filePath);
+
+            Workbook workbook = WorkbookFactory.create(fis);
+
+
+
+
+
+
+    }
+
     @Test
     public void readExcelTest1() throws IOException {
         String filePath = "src/resources/ÜlkelerTest.xlsx";
@@ -28,6 +44,7 @@ public class C01_ReadExcell {
 
             System.out.println(tümTablo);
         }
+
 
 
 
