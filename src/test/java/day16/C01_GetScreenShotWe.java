@@ -25,7 +25,8 @@ public class C01_GetScreenShotWe extends TestBaseBeforeAndAfterClass {
         searchBox.sendKeys("Nutella", Keys.ENTER);
         //Arama sonucunun resmini alalim
 
-        WebElement aramaSonucu = driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
+        WebElement aramaSonucu = driver.
+                findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         Assert.assertTrue(aramaSonucu.isDisplayed());
         File nutellaAramaSonucu = aramaSonucu.getScreenshotAs(OutputType.FILE);
 
